@@ -1,0 +1,119 @@
+<div id="navbar">
+    <div style="margin-left: 20px;margin-top: 20px;" (click)="openNav()"><i class="fa-solid fa-bars" style="font-size: 17px;" ></i></div>
+    <div class="fas fa-search" style="margin-top: 20px; margin-left: 20px;font-size: 17px"></div>
+    <div class="option">Home</div>
+    <div class="option">News</div>
+    <div class="option">Contact</div>
+    <img src="assets/user-1.jpg" style="float: right; width: 30px;height: 30px; border-radius: 100%;margin-top: 26px; margin-right: 20px;" alt="">
+    <!-- <button (click)="logout()" style="float: right;">logout</button> -->
+    <div class="fa-regular fa-bell" style="float: right;margin-right: 20px;font-size: 17px;"></div>
+    <div class="fa-solid fa-cart-shopping" style="float: right;margin-right: 10px;font-size: 17px;"></div>
+
+</div>
+<br><br><br>
+<div id="mySidenav" class="sidenav">
+  <p href="javascript:void(0)" class="closebtn" style="margin-top: -10px;margin-right: -10px;" (click)="closeNav()" >&times;</p>
+    <h1>Home</h1>
+    <div class="sno">Modern</div>
+    <div class="sno">Ecommerce</div>
+    <div class="sno">NFT</div>
+    <div class="sno">Crypto</div>
+    <div class="sno">General</div>
+    <div class="sno">Music</div>
+    <h1>Apps</h1>
+    <div class="sno">Calendar</div>
+    <div class="sno" (click)="navtoweather()">Weather</div>
+    <div class="sno">Chat</div>
+    <div class="sno">Email</div>
+    <div class="sno">Notes</div>
+    <div class="sno">Contact Table</div>
+    <div class="sno">Contact list</div>
+    <div class="sno">invoice</div>
+    <div class="sno">User Profile</div>
+    <div class="sno">Blog</div>
+    <div class="sno">Ecommerce</div>
+    <h1>Pages</h1>
+    <div class="sno">Pricing</div>
+    <div class="sno">FAQ</div>
+    <div class="sno">Account Setting</div>
+    <div class="sno">Landing Page</div>
+    <div class="sno">Widgets</div>
+    <h1>UI</h1>
+    <div class="sno">UI Elements</div>
+    <div class="sno">Cards</div>
+    <div class="sno">Component</div>
+
+  </div>
+<br>
+<br>
+<div id="banner" style="background-image: url('assets/ChatBc.png');  ">
+  <div style="float: left;font-weight: 700;margin-left: 30px;margin-top: 40px;font-size: 20px;">Account Setting</div>
+  <br><br>
+  <p style="float: left;color: #75797F;margin-left: 30px;margin-top: -30px;">Home &#8226; Account Setting</p>
+</div>
+<div id="container">
+  <div class="nav">
+    <div class="navo active">Account</div>
+    <div class="navo">Notifications</div>
+    <div class="navo">Bills</div>
+    <div class="navo">Security</div>
+  </div>
+  <div class="pfpw">
+    <div class="pf">
+      <div style="margin-top: 20px;margin-left: 25px;font-weight: 700;font-size: 18px;">Change Profile</div>
+      <p style="margin-top: 6px;margin-left: 25px;font-size: 14px;color: #75797F;">Change your profile picture from here</p>
+      <img src="assets/user-1.jpg" style="width: 120px;height: 120px; border-radius: 100%;margin-top: 26px; margin-right: 20px; margin-left: 39%;" alt=""><br>
+      <input type="file" id="img" name="img" accept="image/*" title="">
+      <span><input type="button" class="rsbtn" value="Reset"></span>
+      <p style="margin-top: 20px;margin-left: 22%;font-size: 14px;color: #75797F;">Allowed JPG, GIF or PNG. Max size of 800K</p>
+    </div>
+    <div class="pw">
+      <div style="margin-top: 20px;margin-left: 25px;font-weight: 600;font-size: 18px;">Change Password</div>
+      <p style="margin-top: 6px;margin-left: 25px;font-size: 14px;color: #75797F;">To change your password please confirm here</p>
+      <div style="margin-top: 30px;margin-left: 25px;font-weight: 600;font-size: 14px;">Current Password</div>
+      <input type="password" value="abcdefghtim" class="cp">
+      <div style="margin-top: 20px;margin-left: 25px;font-weight: 600;font-size: 14px;">New Password</div>
+      <input type="password" value="abcdefghtim" class="cp">
+      <div style="margin-top: 20px;margin-left: 25px;font-weight: 600;font-size: 14px;">Confirm Password</div>
+      <input type="password" value="abcdefghtim" class="cp">
+    </div>
+  </div>
+  <div class="pd">
+    <div style="padding-top: 20px;margin-left: 25px;font-weight: 700;font-size: 18px;">Personal Details</div>
+    <p style="margin-top: 6px;margin-left: 25px;font-size: 14px;color: #75797F;">To change your personal detail , edit and save from here</p>
+    <div class="row">
+      <div class="column" >
+        <div style="margin-top: -10px;font-weight: 600;font-size: 14px;margin-bottom: 10px;">Your Name</div>
+        <input type="text" class="inputleft" placeholder="Mathew Anderson">
+        <div style="margin-top: 20px;font-weight: 600;font-size: 14px;margin-bottom: 10px;">Location</div>
+        <select name="" id=""class="optionleft" style="  background-image: url('assets/check.svg');">
+          <option value="United States">United States</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="India">India</option>
+          <option value="Russia">Russia</option>
+        </select>
+        <div style="margin-top: 20px;font-weight: 600;font-size: 14px;margin-bottom: 10px;">Email</div>
+        <input type="text" class="inputleft" placeholder="info@modernize.com">
+        <div style="margin-top: 20px;font-weight: 600;font-size: 14px;margin-bottom: 10px;">Address</div>
+        <input type="text" class="inputleft" style="width: 1046px;" placeholder="814 Howard Street, 120065, India">
+
+      </div>
+      <div class="column" >
+        <div style="margin-top: -10px;font-weight: 600;font-size: 14px;margin-bottom: 10px;">Store Name</div>
+        <input type="text" class="inputleft" placeholder="Maxima Studio">
+        <div style="margin-top: 20px;font-weight: 600;font-size: 14px;margin-bottom: 10px;">Currency</div>
+        <select name="" id=""class="optionleft" style="  background-image: url('assets/check.svg');">
+          <option value="1">US Dollar ($)</option>
+          <option value="2">United Kingdom (Pound)</option>
+          <option value="3">India (INR)</option>
+          <option value="4">Russia (Ruble)</option>
+        </select>
+        <div style="margin-top: 20px;font-weight: 600;font-size: 14px;margin-bottom: 10px;">Phone</div>
+        <input type="text" class="inputleft" placeholder="+91 12345 65478">
+        <input type="button" class="save" value="Save">
+        <span><input type="button" class="cancel" value="Cancel"></span>
+      </div>
+    </div>
+      <input type="button" (click)="signout()" class="sob" value="Sign out">
+  </div>
+</div>

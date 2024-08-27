@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>{{formData?.name ?? ''}}</p>
+    <p>{{formData?.rooms ?? ''}}</p>
+    <p>{{formData?.SD ?? ''}}</p>
+    <p>{{formData?.ED ?? ''}}</p>
+    <p>{{formData?.note ?? ''}}</p>
+    <input type="submit" value="Submit"  (click)="navtoResultForm()"><br><br>
+    <input type="submit" value="Back" (click)="navtoCreateForm()">
+
+
+
+</body>
+</html>

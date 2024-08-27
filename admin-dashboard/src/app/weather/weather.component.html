@@ -1,0 +1,98 @@
+<div id="navbar">
+  <div style="margin-left: 20px;margin-top: 20px;" (click)="openNav()"><i class="fa-solid fa-bars"
+      style="font-size: 17px;"></i></div>
+  <div class="fas fa-search" style="margin-top: 20px; margin-left: 20px;font-size: 17px"></div>
+  <div class="option">Home</div>
+  <div class="option">News</div>
+  <div class="option">Contact</div>
+  <img src="assets/user-1.jpg"
+    style="float: right; width: 30px;height: 30px; border-radius: 100%;margin-top: 26px; margin-right: 20px;" alt="">
+  <!-- <button (click)="logout()" style="float: right;">logout</button> -->
+  <div class="fa-regular fa-bell" style="float: right;margin-right: 20px;font-size: 17px;"></div>
+  <div class="fa-solid fa-cart-shopping" style="float: right;margin-right: 10px;font-size: 17px;"></div>
+
+</div>
+<br><br><br>
+<div id="mySidenav" class="sidenav">
+  <p href="javascript:void(0)" class="closebtn" style="margin-top: -10px;margin-right: -10px;" (click)="closeNav()">
+    &times;</p>
+  <h1>Home</h1>
+  <div class="sno">Modern</div>
+  <div class="sno">Ecommerce</div>
+  <div class="sno">NFT</div>
+  <div class="sno">Crypto</div>
+  <div class="sno">General</div>
+  <div class="sno">Music</div>
+  <h1>Apps</h1>
+  <div class="sno">Calendar</div>
+  <div class="sno" style="color: #789BFF;background-color: #EEF3FF;border-radius: 10px;">weather</div>
+  <div class="sno">Chat</div>
+  <div class="sno">Email</div>
+  <div class="sno">Notes</div>
+  <div class="sno">Contact Table</div>
+  <div class="sno">Contact list</div>
+  <div class="sno">invoice</div>
+  <div class="sno">User Profile</div>
+  <div class="sno">Blog</div>
+  <div class="sno">Ecommerce</div>
+  <h1>Pages</h1>
+  <div class="sno">Pricing</div>
+  <div class="sno">FAQ</div>
+  <div class="sno">Account Setting</div>
+  <div class="sno">Landing Page</div>
+  <div class="sno">Widgets</div>
+  <h1>UI</h1>
+  <div class="sno">UI Elements</div>
+  <div class="sno">Cards</div>
+  <div class="sno">Component</div>
+
+</div>
+<br>
+<br>
+<div id="banner" style="background-image: url('assets/ChatBc.png');  ">
+  <div style="float: left;font-weight: 700;margin-left: 30px;margin-top: 40px;font-size: 20px;">Weather</div>
+  <br><br>
+  <p style="float: left;color: #75797F;margin-left: 30px;margin-top: -30px;">Home &#8226; Weather</p>
+</div>
+<div id="container">
+
+  <div class="pfpw">
+    <form class="pf" style="background-image: url('assets/sky.jpg');margin-top: 30px;" [formGroup]="form"
+      (ngSubmit)="getweatherbycityname()">
+      <div style="float: right;margin-right: 70px; font-size: 50px;font-weight: 500;margin-top: 50px;">{{weather?.name}}
+      </div>
+      <div class="temp" style="margin-top: 50px;">Current Temperature: {{weather?.main.temp}}</div>
+      <div class="temp">Highest Temperature: {{weather?.main.temp_max}}</div>
+      <div class="temp">Lowest Temperature: {{weather?.main.temp_min}}</div>
+      <div class="temp">Weather : {{weather?.weather[0].description}}</div>
+      <div id="icon"><img style="margin-left: 65px;" id="wicon" [src]="imageurl" alt=""></div>
+      <div class="temp">AQI: {{airquality?.list[0].main.aqi}} </div>
+      <div
+        style="margin-top: 3%;margin-left: 13%;height: 15px; background-color: #cdf5ff; width: 400px;border-radius: 10px;">
+        <div id="bar"
+          style="max-width: 100%;border-radius: 10px;height: 100%;overflow: hidden;width: 0%;transition: 3s;">
+          <div style="width: 400px;background: linear-gradient(90deg,#8dccd3,#b1db8a,#ebe587,#e0915d,#ca6670,#a55b80);
+          border-radius: 10px;
+          height: 100%;"></div>
+
+        </div>
+      </div>
+    </form>
+    <form class="pw" [formGroup]="form" (ngSubmit)="getweatherbycityname()" style="margin-top: 30px;">
+      <span><input type="text" placeholder="City name" class="getWeather" formControlName="country">
+      <input type="submit" value="Search"  [disabled]="form.invalid" class="search"></span>
+    </form>
+  </div>
+  <div class="pd">
+    <div class="row">
+      <div class="column">
+
+
+      </div>
+      <div class="column">
+
+      </div>
+    </div>
+    <input type="button" (click)="signout()" class="sob" value="Sign out">
+  </div>
+</div>

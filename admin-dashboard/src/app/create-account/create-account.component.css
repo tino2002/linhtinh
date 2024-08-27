@@ -1,0 +1,135 @@
+
+
+
+.container {
+
+    height: 512px;
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+.h1{
+    font-weight: 700;
+}
+.btns{
+    margin-left: 1px;
+}
+.gg {
+    background-color: white;
+    border: 1px solid #ebf1f6;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 200;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+.fb {
+    background-color: white;
+    border: 1px solid #ebf1f6;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 200;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+}
+.line1 {
+    border-top: 1px solid #ebf1f6;
+    height: 1px;
+    width: 100px;
+    margin-left: 36%;
+
+}
+.siw{
+    margin-top: -15px;
+    margin-left: -10px;
+}
+.line2 {
+    border-top: 1px solid #ebf1f6;
+    height: 1px;
+    width: 100px;
+    margin-left: 705px;
+    margin-top: -2px;
+}
+.usnl{
+    margin-left: -300px;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.usninput{
+    margin-left: -10px;
+    width: 330px;
+    height: 30px;
+    border: 1px solid #ebf1f6;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.emaill {
+    margin-left: -245px;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.emaili{
+    margin-left: -10px;
+    width: 330px;
+    height: 30px;
+    border: 1px solid #ebf1f6;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.pswl{
+    margin-left: -272px;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.pswinput{
+    margin-left: -10px;
+    width: 330px;
+    height: 30px;
+    border: 1px solid #ebf1f6;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.sib {
+
+    background-color: white;
+    border: 1px solid #5d87ff;
+    background-color: #5d87ff;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 200;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 340px;
+    height: 40px;
+    margin-left: -5px;
+    margin-top: 20px;
+}
+.ahan{
+    margin-top: 20px;
+    margin-left: -150px;
+}
+.si {
+    color: #5d87ff;
+    margin-left: 120px;
+    margin-top: -20px;
+    cursor: pointer;
+}

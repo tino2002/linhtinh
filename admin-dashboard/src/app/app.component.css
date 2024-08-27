@@ -1,0 +1,8 @@
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+::ng-deep * {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }

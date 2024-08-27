@@ -1,0 +1,62 @@
+header {
+    background-color: orange;
+    flex: 1 100%;
+}
+.aside1 {
+    background-color: bisque;
+    flex: 1 0px;
+}
+article {
+    background-color: aqua;
+    flex: 3 0px;
+    text-align: left;
+}
+.aside2 {
+    background-color: pink;
+    flex: 1 0px;
+}
+footer {
+    background-color: green;
+    flex: 1 100%;
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.flex-container > * {
+    padding: 10px;
+}
+@media (max-width: 800px) {
+    .aside1{
+        order: 2;
+        flex: 1 0px;
+    }
+    article {
+        order: 1;
+        flex: 1 0px;
+    }
+    .aside2{
+        order: 3;
+        flex: 1 0px;
+    }
+    footer {
+        order: 4;
+    }
+    
+}
+@media (max-width: 600px) {
+    .aside1{
+        order: 2;
+        flex: 1 100%;
+    }
+    article{
+        order: 1;
+        flex: 1 100%;
+    }
+    .aside2{
+        order: 3;
+        flex: 1 100%;
+    }
+
+}

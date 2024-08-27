@@ -1,0 +1,9 @@
+<div id="1" class="item new col-md-4" *ngFor="let item of product">
+    <a href="#">
+      <div class="featured-item">
+        <img src="{{item.avatar}}">
+        <h4>{{item.name}}</h4>
+        <h6>${{item.createdAt}}</h6>
+      </div>
+    </a>
+  </div>

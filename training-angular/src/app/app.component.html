@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <form class="sign-in-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <h2 class="sil">Sign in Now</h2>
+      <div class="Username">
+        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        <input class="usn" formControlName="user" placeholder="Username or E-mail" [class.valid]="form.get('user')?.valid && 
+          (form.get('user')?.dirty || form.get('user')?.touched)" [class.invalid]="form.get('user')?.invalid && 
+          (form.get('user')?.dirty || form.get('user')?.touched)" />
+        <!-- <pre class="al" *ngIf="submited && form.controls['user'].errors">Field is Empty</pre> -->
+        <div *ngIf="form.get('user')?.invalid && 
+          form.get('user')?.errors && 
+          (form.get('user')?.dirty || form.get('user')?.touched)">
+          <pre class="al" *ngIf="form.get('user')?.hasError('required')">This field is required.
+          </pre>
+          <pre class="al" *ngIf="form.get('user')?.hasError('minlength')">The minimum length for this field is 6 characters.
+          </pre>
+          <pre class="al" *ngIf="form.get('user')?.hasError('maxlength')">The maximum length for this field is 30 characters.
+          </pre>
+        </div>
+      </div>
+      <div class="row-control">
+        <i class="fa fa-key" aria-hidden="true"></i>
+        <i class="fa fa-eye" style="margin-left: 280px;border:0px;font-size: 15px;" aria-hidden="true"></i>
+        <input class="psw" type="password" formControlName="pass" placeholder="Password" [class.valid]="form.get('pass')?.valid && 
+          (form.get('pass')?.dirty || form.get('pass')?.touched)" [class.invalid]="form.get('pass')?.invalid && 
+          (form.get('pass')?.dirty || form.get('pass')?.touched)" />
+
+            <div *ngIf="form.get('pass')?.invalid && 
+            form.get('pass')?.errors && 
+            (form.get('pass')?.dirty || form.get('pass')?.touched)">
+          <pre class="al" *ngIf="form.get('pass')?.hasError('required')">This field is required.
+          </pre>
+          <pre class="al" *ngIf="form.controls['pass']?.errors?.['passwordStrength']">
+            Your password must have lower case, upper case, numeric characters and special characters.
+          </pre>
+          </div>
+      </div>
+      <div class="row-control">
+      </div>
+      <div class="row-control row-actions">
+        <span class="forgot">Forgot Password ?</span>
+        <button class="loginbtn" color="primary" type="submit" [disabled]="form.invalid">Login</button>
+      </div>
+      <div class="or">------------------ Or ------------------</div>
+      <span class="g">G</span>
+      <button class="ggbtn" color="primary" type="submit">LOGIN WITH GOOGLE</button>
+    </form>
+  </div>
+</body>
+
+</html>

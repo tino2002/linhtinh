@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ktra", "ktra\ktra.csproj", "{19F04C79-5FB0-4157-925B-56D6A513CBE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19F04C79-5FB0-4157-925B-56D6A513CBE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F04C79-5FB0-4157-925B-56D6A513CBE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F04C79-5FB0-4157-925B-56D6A513CBE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F04C79-5FB0-4157-925B-56D6A513CBE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0747E50-B485-4CA1-92D6-22216D2A84E1}
+	EndGlobalSection
+EndGlobal

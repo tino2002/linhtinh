@@ -1,0 +1,11 @@
+C:\Users\vum82\OneDrive\Máy tính\c#\minhngoo\VuNgocMinh\VuNgocMinh\bin\Debug\VuNgocMinh.exe.config
+C:\Users\vum82\OneDrive\Máy tính\c#\minhngoo\VuNgocMinh\VuNgocMinh\bin\Debug\VuNgocMinh.exe
+C:\Users\vum82\OneDrive\Máy tính\c#\minhngoo\VuNgocMinh\VuNgocMinh\bin\Debug\VuNgocMinh.pdb
+C:\Users\vum82\OneDrive\Máy tính\c#\minhngoo\VuNgocMinh\VuNgocMinh\obj\Debug\VuNgocMinh.csproj.AssemblyReference.cache
+C:\Users\vum82\OneDrive\Máy tính\c#\minhngoo\VuNgocMinh\VuNgocMinh\obj\Debug\VuNgocMinh.csproj.SuggestedBindingRedirects.cache
+C:\Users\vum82\OneDrive\Máy tính\c#\minhngoo\VuNgocMinh\VuNgocMinh\obj\Debug\VuNgocMinh.Form1.resources
+C:\Users\vum82\OneDrive\Máy tính\c#\minhngoo\VuNgocMinh\VuNgocMinh\obj\Debug\VuNgocMinh.Properties.Resources.resources
+C:\Users\vum82\OneDrive\Máy tính\c#\minhngoo\VuNgocMinh\VuNgocMinh\obj\Debug\VuNgocMinh.csproj.GenerateResource.cache
+C:\Users\vum82\OneDrive\Máy tính\c#\minhngoo\VuNgocMinh\VuNgocMinh\obj\Debug\VuNgocMinh.csproj.CoreCompileInputs.cache
+C:\Users\vum82\OneDrive\Máy tính\c#\minhngoo\VuNgocMinh\VuNgocMinh\obj\Debug\VuNgocMinh.exe
+C:\Users\vum82\OneDrive\Máy tính\c#\minhngoo\VuNgocMinh\VuNgocMinh\obj\Debug\VuNgocMinh.pdb

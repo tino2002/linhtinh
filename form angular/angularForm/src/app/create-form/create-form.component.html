@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <form class="sign-in-form" [formGroup]="form" (ngSubmit)="onSubmit()" >
+        <h2>Don xin nghi lam</h2>
+        <div class="FullName">
+          <input type="text" placeholder="Ho va Ten" formControlName="name" [class.valid]="form.get('name')?.valid && 
+          (form.get('name')?.dirty || form.get('name')?.touched)" [class.invalid]="form.get('name')?.invalid && 
+          (form.get('name')?.dirty || form.get('name')?.touched)">
+          <div *ngIf="form.get('name')?.invalid && 
+          form.get('name')?.errors && 
+          (form.get('name')?.dirty || form.get('name')?.touched)">
+          <pre class="al" *ngIf="form.get('name')?.hasError('required')">This field is required.
+          </pre>
+          
+          <pre class="al" *ngIf="form.controls['name']?.errors?.['passwordStrength']">not inculde numbers and special character</pre>
+          </div>
+        </div>
+        <div class="phongban">
+          <label for="rooms">Chon phong ban:</label>
+          <select (change)="onChangeDepartment($event)" name="rooms" formControlName="rooms" id="rooms" [class.valid]="form.get('rooms')?.valid && 
+          (form.get('rooms')?.dirty || form.get('rooms')?.touched)" [class.invalid]="form.get('name')?.invalid && 
+          (form.get('rooms')?.dirty || form.get('rooms')?.touched)">
+          <pre class="al" *ngIf="form.get('rooms')?.hasError('required')">This field is required.
+          </pre>
+            <option *ngFor="let item of departments" [value]="item.id">{{item.name}}</option>
+          </select>
+          
+          <br><br>
+        </div>
+        <div class="dt">
+          <div class="start">
+            <input type="date" id="startDate" [min]="fromDate | date: 'yyyy-MM-dd'" [max]="form.get('ED')?.value" formControlName="SD" name="NgayNghi">
+          </div>
+          <div class="end">
+            <input type="date" id="endDate" [min]="form.get('SD')?.value"  formControlName="ED" name="NgayDiLamLai">
+          </div>
+        </div>
+        <div class="note">
+          <input type="text" formControlName="note" [maxlength]="250" placeholder="Ly do nghi">
+        </div>
+        <input type="submit" value="Submit" [disabled]="form.invalid" (click)="navtoReviewForm()">
+    </form>
+  </div>
+</body>
+</html>

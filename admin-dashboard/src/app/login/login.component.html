@@ -1,0 +1,34 @@
+<form action="" [formGroup]="form">
+    <div class="container">
+        <h1 style="font-size: 25px;margin-left: -70px;">Welcome to Modernize</h1>
+        <div style="margin-left: -176px;margin-top: 10px;margin-bottom: 30px;opacity: 0.6;">Your Admin Dashboard</div>
+        <div class="btns">
+            <input type="button" value="with google" style="margin-top: -20px;" class="gg"><img src="assets/google-icon.svg" alt="" style="width: 15px;height: 15px;margin-bottom: -3px;margin-left: -144px;margin-right: 155px;cursor: pointer;"  srcset="">
+
+            <input type="button" value="with FB" class="fb"><img src="assets/fbic2.png" alt="" style="width: 20px;height: 20px;margin-bottom: -5px;margin-left: -115px;margin-right: 155px;cursor: pointer;"  srcset="">     <br><br>
+        </div>
+
+        <div class="signinwith">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="siw">or sign in with</div>
+            <div class="usn">
+                <div class="usnl" >Username</div>
+                <input type="text"formControlName="usni" class="usninput">
+            </div>
+            <div class="psw">
+                <div class="pswl">Password</div>
+                <input type="password" formControlName="pswi" class="pswinput">
+            </div>
+        </div>
+        <div class="forgot">
+            <span><input type="checkbox" name="" id="" class="check">     Remeber this Device</span>
+            <span><div class="fp" (click)="navtoFotgotForm()">Forgot Password?</div></span>
+        </div>
+        <input type="button" value="Sign in" (click)="navtoDasboard()" class="sib">
+        <div class="createacc">
+            <div class="ntm">New to Modernize ?</div>
+            <div class="cac" (click)="navtoCreateForm()" >Create an account</div>
+        </div>
+    </div>
+</form>

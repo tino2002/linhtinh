@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.gr {
+  height: 25px;
+  width: 25px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+.bl {
+  height: 25px;
+  width: 25px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+.re {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+.ye {
+  height: 25px;
+  width: 25px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h1>Choose background color</h1>
+  <div class="gr" style="cursor: pointer;" onclick="changebgrgr('gr',this)"></div>
+  <div class="bl" style="cursor: pointer;" onclick="changebgrgr('bl',this)"></div>
+  <div class="re" style="cursor: pointer;" onclick="changebgrgr('re',this)"></div>
+  <div class="ye" style="cursor: pointer;" onclick="changebgrgr('ye',this)"></div>
+  <button style="display: block ;" onclick="rs()">Reset</button>
+</div>
+<script>
+    function changebgrgr(color,obj){
+        switch(obj.className){
+          case 'gr':
+            c = 'green';
+            break;
+          case 'bl':
+            c = 'blue';
+            break; 
+          case 're':
+            c = 'red';
+            break;
+          case 'ye':
+            c = 'yellow';
+            break;          
+        }
+        document.body.style.backgroundColor = c;
+    }
+
+    function rs(){
+        document.body.style.backgroundColor = "white";
+    }
+
+</script>
+</body>
+</html> 
